@@ -1,11 +1,14 @@
 # flask_api_regno
-Развертывание системы
+**Развертывание системы**
+
 git clone https://github.com/vavasya/Flask_API_ML_classify.git
+
 cd Flask_API_ML_classify
+
 docker-compose up -d
 
-Для примера можно кинуть тестовый POST запрос
-
+**Для примера можно кинуть тестовый POST запрос**
+```
 curl -L -X POST 'localhost:5000/reg/' \
 -H 'Content-Type: application/json' \
 -H 'x-api-key: 123321' \
@@ -21,3 +24,4 @@ curl -L -X POST 'localhost:5000/reg/' \
   "time_check": "2021-08-01 09:02:59",
   "direction": 0
 }'
+```
